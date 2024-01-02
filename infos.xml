@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<document>
+	<title><![CDATA[recommander à un ami]]></title>
+	<author><![CDATA[G.Cyrille]]></author>
+	<version>0.0</version>
+	<date>2024-01-01</date>
+	<site>https://re7net.com</site>
+	<description><![CDATA[Envoie le lien de la page par mail à un ami avec un petit mot de votre part.]]></description>
+	<scope></scope>
+	</document>

@@ -1,0 +1,92 @@
+#TellMyFriend {
+	position:fixed;
+	z-index:2150000000;/*au dessus de tarteaucitron*/
+	inset:0;
+	display:grid;
+	gap:0.5em;
+	place-items:center;
+	min-height:100vh;
+	overflow:auto;
+	background:rgba(255,255,255,0.2);
+	backdrop-filter: blur(3px);
+	padding-inline: calc( 50vw - 350px);  
+}
+#TellMyFriend form {
+	background:#fff;
+	padding:1em;
+	border:solid 1px;
+	border-radius: .5em;
+	box-shadow:1em 1em 1em, 0 0 5em;
+}
+
+#TellMyFriend :is(fieldset,legend) {
+	border:revert;
+	background:initial;
+	padding:0 1em 1em;	
+}
+#TellMyFriend  legend {
+	text-transform:uppercase;
+	margin-bottom: -1em;
+}
+#TellMyFriend :is(p) {
+	margin:0;
+	padding:0.235em 0;
+}
+#TellMyFriend label:has(span) {
+	font-size:0.65em;
+	line-height:1.2
+}
+#TellMyFriend label span:first-of-type {
+	display: block;
+	font-size:1.2em;
+	font-weight: bold;
+}
+#closeTell {position:absolute;inset :-100vw -100vw 0 0 }
+#closeTell:checked + #TellMyFriend {
+	display:none;
+}
+.btn {
+	display:inline-block;
+	padding:0.25em 1em;
+	border-radius:0.35em;
+	font-size:1.2rem;
+	font-weight: bold;
+	box-shadow:1px 1px 3px 1px #777
+}
+.blue {
+	background: #20cbfb;
+	color:white;
+}
+.red {
+	background: #ed455e;
+}
+.green {
+	background: #74ea4b;
+}
+#TellMyFriend  form [for="closeTell"] {
+	color:crimson;
+	font-size:1.4rem;
+	float:end;
+	aspect-ratio:1;
+	display:grid;
+	place-items:center;
+}
+#TellMyFriend  form [for="closeTell"] {
+	color:crimson;
+	font-size:2rem;
+	line-height:1;
+	width:2.5rem;
+	border-radius:50%;
+	aspect-ratio:1/1;
+	display:grid;
+	place-items:center;
+	position:absolute;
+	right: calc(50vw - 340px);
+	translate:0 -50%;
+	background:lightgreen;
+	box-shadow:1px 1px 3px 1px #777
+}
+
+#TellMyFriend  fieldset:last-of-type {
+	background:antiquewhite;
+}
