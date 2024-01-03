@@ -13,6 +13,10 @@
 }
 #TellMyFriend form {
 	background:#fff;
+	background:
+    		linear-gradient(135deg,#fa7a,#fffd,#fffe),
+    		url('/themes/defaut/img/bg.jpg') center / cover
+   		gold;
 	padding:1em;
 	border:solid 1px;
 	border-radius: .5em;
