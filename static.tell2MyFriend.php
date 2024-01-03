@@ -27,7 +27,7 @@
 		
 		#capcha ok , verifions le destinataire
 		if(isset($fields['to']) && $plxPlugin->validateEmail($fields['to']) == true) {
-			if($plxPlugin->tellByMail($fields)) {
+			if(!$plxPlugin->tellByMail($fields)) {
 			$_SESSION['msgcom'] =  $plxPlugin->getLang('L_ERR_VALID_MAIL');
 			}
 		}
