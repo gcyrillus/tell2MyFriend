@@ -15,4 +15,6 @@ recommander à un(e) ami(e)
 	<mark style="color:purple;font-weight:bold;padding:0.5em;display:inline-block;vertical-align:middle;"><code>&lt;?php eval($this->callHook('tell2MyFriendwidget')); ?&gt;</code></mark>
 	dans une page statique en l'éditant à l'endroit où vous voulez qu'il apparaisse.
 	</p>
+	<h2>Widget(S?)</h2>
+	<p>Pour des raisons technique , un seul widget, bouton, sera afficher par page, ce sera determiner par le premier hook apparaissant dans le code.</p>
 </div>
