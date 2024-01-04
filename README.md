@@ -16,5 +16,5 @@ recommander à un(e) ami(e)
 	dans une page statique en l'éditant à l'endroit où vous voulez qu'il apparaisse.
 	</p>
 	<h2>Widget(S?)</h2>
-	<p>Pour des raisons technique , un seul widget, bouton, sera afficher par page, ce sera determiner par le premier hook apparaissant dans le code.</p>
+	<p>Pour des raisons techniques , un seul widget, bouton, sera afficher par page, ce sera determiner par le premier hook apparaissant dans le code.</p>
 </div>
