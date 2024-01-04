@@ -8,7 +8,7 @@ recommander à un(e) ami(e)
 	<h2>Dans les fichiers du thème</h2>
 	<p>Le code suivant est à copier coller : 
 	<mark style="color:purple;font-weight:bold;padding:0.5em;display:inline-block;vertical-align:middle;"><code>&lt;?php eval($plxShow->callHook('tell2MyFriendwidget')); ?&gt;</code></mark>
-	dans l'un des fichier de votre thème à l'endroit où vous voulez qu'il apparaisse.
+	dans l'un des fichiers de votre thème à l'endroit où vous voulez qu'il apparaisse.
 	</p>
 	<h2>Dans une page statique</h2>
 	<p>Le code suivant est à copier coller : 
@@ -16,5 +16,5 @@ recommander à un(e) ami(e)
 	dans une page statique en l'éditant à l'endroit où vous voulez qu'il apparaisse.
 	</p>
 	<h2>Widget(S?)</h2>
-	<p>Pour des raisons techniques , un seul widget, bouton, sera afficher par page, ce sera determiner par le premier hook apparaissant dans le code.</p>
+	<p>Pour des raisons techniques , un seul widget, bouton, sera affiché par page, ce sera determiné par le premier Hook apparaissant dans le code.</p>
 </div>
