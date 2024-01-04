@@ -4,8 +4,8 @@
 		*
 		* @CMS required			PluXml 
 		*
-		* @version			1.0
-		* @date				2024-01-01
+		* @version			0.3
+		* @date				2024-01-04
 		* @author 			G.Cyrille
 	**/
 	class tell2MyFriend extends plxPlugin {
@@ -72,7 +72,7 @@
 			}
 			
 			echo ' 		<link href="'.PLX_PLUGINS.basename(__DIR__).'/css/site.css" rel="stylesheet" type="text/css" />'."\n";
-			echo ' 		<script src="'.PLX_PLUGINS.basename(__DIR__).'/js/site.js"></script>'."\n";
+			
 			// ajouter ici vos propre codes (insertion balises link, script , ou autre)
 		}
 		
