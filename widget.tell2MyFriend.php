@@ -1,15 +1,19 @@
-<?php	
+<?php
+	if(defined('WIDGET')) {goto done;}
 	$plugName =basename( __DIR__ );
 	$plxShow = plxShow::getInstance();
 	$plxMotor = plxMotor::getInstance();
 	if (!isset($plxMotor->plxPlugins->aPlugins[$plugName])) { exit;}
 	else {$plxPlugin = $plxMotor->plxPlugins->aPlugins[$plugName];}
-	$pageUrl = !empty($plxShow->plxMotor->get) ? $plxShow->plxMotor->racine . 'index.php?' . $plxShow->plxMotor->get : $plxShow->plxMotor->racine;
+	$pageUrl = !empty($plxShow->plxMotor->get) ? $plxShow->plxMotor->racine . 'index.php?' . $plxShow->plxMotor->get : $plxShow->plxMotor->racine;	
+	define('WIDGET','vu');
+	echo ' 		<script src="'.PLX_PLUGINS.basename(__DIR__).'/js/site.js"></script>'."\n";
 ?>
 <label for="closeTell" class="btn blue"><?= $plxPlugin->getLang('L_TELL_A_FRIEND') ?></label>
 <input type="checkbox" id="closeTell" checked="checked">
 <div id="TellMyFriend"></div>
-<script>const myformtpl =`
+<script>
+const myformtpl =`
 <template id="myform">
 	<form action="index.php?<?= $plxPlugin->getParam('url') ?>" method="post" class="formtpl">
 	<label for="closeTell">X</label>
@@ -39,8 +43,10 @@
 		</p>
 		<p>
 			<label for="rep"><strong><?=  $plxPlugin->getLang('L_ANTISPAM')?></strong> *</label>
-			<?php $plxShow->plxMotor->plxCapcha = new plxCapcha(); # Création objet captcha
-			$plxShow->capchaQ(); ?>
+			<?php
+			$plxShow->plxMotor->plxCapcha = new plxCapcha(); # Création objet captcha
+			$plxShow->capchaQ();
+			 ?>
 			<input type="text"  name="rep" id="id_rep"  size=2 style="width:auto;text-align:center" required class="form-imput">
 		</p>
 		<input type="submit">
@@ -48,3 +54,4 @@
 	</form> 
 </template>`;
 </script>
+<?php done: ?>
