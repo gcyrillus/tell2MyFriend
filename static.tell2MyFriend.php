@@ -16,7 +16,7 @@
 			$fields['subject']= $plxPlugin->getLang('L_RECOMMEND') ;
 			$fields['to'] = strip_tags(trim($_POST['friendMail']));
 			$fields['message'] = strip_tags($_POST['tellIt'], '<p><br><b>').'<br>'.PHP_EOL;
-			$fields['from'] = strip_tags(trim($_POST['yourMail']));
+			//$fields['from'] = strip_tags(trim($_POST['yourMail']));
 			$fields['page']= strip_tags(trim($_POST['seeThat']));
 			$fields['pageTitle']= strip_tags($_POST['pageName']);
 			
