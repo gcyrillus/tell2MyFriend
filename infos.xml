@@ -2,9 +2,9 @@
 	<document>
 	<title><![CDATA[recommander à un ami]]></title>
 	<author><![CDATA[G.Cyrille]]></author>
-	<version>0.0</version>
-	<date>2024-01-01</date>
+	<version>1.1</version>
+	<date>2024-01-07</date>
 	<site>https://re7net.com</site>
-	<description><![CDATA[Envoie le lien de la page par mail à un ami avec un petit mot de votre part.]]></description>
+	<description><![CDATA[Formulaire de recommandation de site. Configuration au choix avec la fonction mail() ou un lien mailto. ]]></description>
 	<scope></scope>
 	</document>
