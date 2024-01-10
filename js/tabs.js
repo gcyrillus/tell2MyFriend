@@ -1,4 +1,4 @@
-window.onload=function() {
+
 	// get tab container
 	var container = document.getElementById("tabContainer");
 	// set current tab
@@ -20,7 +20,7 @@ window.onload=function() {
 	for (var i = 0; i < tabs.length; i++) {
 	  tabs[i].onclick=displayPage;
 	}
-}
+
 
 // on click of one of tabs
 function displayPage() {
