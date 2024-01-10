@@ -4,8 +4,8 @@
 		*
 		* @CMS required			PluXml 
 		*
-		* @version			0.3
-		* @date				2024-01-04
+		* @version			1.0
+		* @date				2024-01-01
 		* @author 			G.Cyrille
 	**/
 	class tell2MyFriend extends plxPlugin {
@@ -193,8 +193,7 @@
 			$to =$fields['to'];
 			$subject =$fields['subject'];
 			$message =$fields['message'].'<p>url <a href="'.$fields['page'].'">'.$fields['pageTitle'].'</a></p>';
-			$headers  = "From: ".$name." <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
-			if($fields['from'] !='') $headers .= "Reply-To: ".$fields['from']."\r\n";
+			$headers  = "From:  no-reply@".$_SERVER['HTTP_HOST']."\r\n";
 			$headers .= 'MIME-Version: 1.0'."\r\n";
 			$headers .= 'Content-type: text/html; charset="' .PLX_CHARSET. '"'."\r\n";
 			$headers .= 'X-Mailer:PHP/' . phpversion();
@@ -215,4 +214,4 @@
 			}			
 		}
 		
-	}	
+	}
